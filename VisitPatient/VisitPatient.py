@@ -81,7 +81,7 @@ def send_SMS():
         
 def call_visitor():
     """
-    Places a to visitor number regarding end of visiting time information to Provided 'Registered' twilio account sid,
+    Places a call to visitor's number regarding end of visiting time information to Provided 'Registered' twilio account sid,
     authorization token.
     """
     try:
