@@ -11,7 +11,6 @@ def register_patient():
     and whether or not the patient is still Admitted(1), or Discharged(0) in the hospital.
     """
     try:
-
         n = int(input("Number of patients: "))
         patient_info = []
         for each_patient in range(n):
@@ -45,7 +44,6 @@ def receptionist(patient_details,visitor_name):
     number of the patient and saves that as a .svg file by visitor name
     """
     try:
-
         for patient in patient_details:
             if patient_name in patient:
                 bed_num = patient[-2]
@@ -96,14 +94,13 @@ def call_visitor():
         print("Couldn't place the call, Please provide a registered twilio api account SID and token or check the format of phone number!")
         sys.exit(0)
         
-        
-        
+               
 if __name__ == '__main__':
     register = register_patient()
     print("Patients information updated!")
     print("Provide following information to enquire the receptionist about the patient")
+    
 try:
-
     patient_name = input("Name of patient: ")
     for each_patient in register:
 
@@ -118,6 +115,7 @@ try:
         else:
             print("Sorry, no patient by name '{}' is admitted or has already been discharged!".format(patient_name))
             sys.exit(0)
+            
     try:
         count = float(input("Visiting Time in minutes: "))
         timer = threading.Timer(count*60, call_visitor)
