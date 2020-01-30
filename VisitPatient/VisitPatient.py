@@ -39,7 +39,7 @@ def register_patient():
         
 def receptionist(patient_details,visitor_name):
     """
-    (patient's name, patient's details, visitor_name, visitor phone number)
+    (patient's details list, visitor_name)
     Takes in the necessary information, generates a QR code based on the bed
     number of the patient and saves that as a .svg file by visitor name
     """
@@ -65,7 +65,7 @@ def receptionist(patient_details,visitor_name):
 def send_SMS():
     """
     sends SMS to visitor number regarding visiting time information to Provided 'Registered' twilio account sid,
-    authorization token and others as parameters.
+    authorization token.
     """
     try:
         client = Client(account_sid, auth_token)
@@ -82,7 +82,7 @@ def send_SMS():
 def call_visitor():
     """
     Places a to visitor number regarding end of visiting time information to Provided 'Registered' twilio account sid,
-    authorization token, from and to number as parameters.
+    authorization token.
     """
     try:
         client = Client(account_sid, auth_token)
