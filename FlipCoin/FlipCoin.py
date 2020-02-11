@@ -1,5 +1,8 @@
 from random import randint
 def flipCoin():
+    '''Uses the randint function of random module to provide flip effect of a coin.
+       Also counts the number of occurrence of each outcome(heads and tails).
+    '''
     heads = tails = count = 0
     while True:
         n = input("Press any key to flip the coin or 'q' to quit: ")
