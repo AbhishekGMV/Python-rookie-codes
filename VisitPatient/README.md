@@ -6,7 +6,7 @@ Following steps occur in the process: <br>
   • Visitor enquires the receptionist about the patient, If the patient is admitted. <br/>
   • Receptionist enquires visitor for necessary information. <br/>
   • Generates a QR code based on bed number of respected patient. <br/>
-  • The copy of QR code is sent to user via mail(to **save paper**) or a hard copy will be given if visitor doesn't have a phone. 
+  • The copy of QR code is sent to user via mail(to **save paper**) or a hard copy will be given if visitor doesn't have a phone.<br> 
   • SMS will be sent to visitor’s phone number about the visiting time. <br/>
   • An access device is maintained at the entrance of the ward which scans the QR code. (But this was quite beyond scope of this             project, it involves programming of hardware like Arduino board and raspberry pi.) <br/>
   • Visitor will receive an automated call before 5 minutes of end of visiting time. <br/>
