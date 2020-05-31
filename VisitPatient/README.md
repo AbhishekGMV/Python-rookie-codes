@@ -1,11 +1,12 @@
 ### Description
 
-Idea of this project is to facilitate a better way of visiting a patient in a hospital general ward, It avoids crowding of visitors in general ward which may disturb the patient in anyway.
-Following steps occur in the process:
+Idea of this project is to facilitate **Social Distancing** amid **COVID-19 pandemic**, in hospitals, in process of visiting a patient in a general ward. It avoids crowding of visitors in general ward, maintains hygiene and also avoids disturbing the other patient in any means. <br>
+Following steps occur in the process: <br>
   • Receptionist maintains information of the in-patients of the hospital. <br/>
   • Visitor enquires the receptionist about the patient, If the patient is admitted. <br/>
   • Receptionist enquires visitor for necessary information. <br/>
-  • Generates a QR code based on bed number of respective patients. <br/>
+  • Generates a QR code based on bed number of respected patient. <br/>
+  • The copy of QR code is sent to user via mail(to **save paper**) or a hard copy will be given if visitor doesn't have a phone. 
   • SMS will be sent to visitor’s phone number about the visiting time. <br/>
   • An access device is maintained at the entrance of the ward which scans the QR code. (But this was quite beyond scope of this             project, it involves programming of hardware like Arduino board and raspberry pi.) <br/>
   • Visitor will receive an automated call before 5 minutes of end of visiting time. <br/>
@@ -28,10 +29,11 @@ The phone number has to be a Registered to Twilio account and obtain SID, token 
 
 ### Advantages <br/>
  Reduces paper work! (Eco-friendly) <br/>
-	QR will be sent to visitor’s phone number. <br/>
+	QR will be sent to visitor’s Mail ID. 
 	In worst case (visitor who doesn’t have a phone), Hard copy of QR code will be provided. <br/>
 
  Improves Quality of business <br/>
+ Helps improve Social distancing activity. <br>   
 	Technology helps reduce Man power. <br/>
 	Reduces cost of maintenance. <br/>
 
