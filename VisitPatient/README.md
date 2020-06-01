@@ -1,6 +1,8 @@
+A terminal based application to help achieve **Social Distancing** amid **COVID-19 pandemic**, in hospitals, in patient visiting activities.  
+
 ### Description
 
-Idea of this project is to facilitate **Social Distancing** amid **COVID-19 pandemic**, in hospitals, in process of visiting a patient in a general ward. It avoids crowding of visitors in general ward, maintains hygiene and also avoids disturbing the other patient in any means. <br>
+Idea of this project is to avoid crowding of visitors in general ward, maintains hygiene and also avoids disturbing the other patient in any means. <br>
 Following steps occur in the process: <br>
   • Receptionist maintains information of the in-patients of the hospital. <br/>
   • Visitor enquires the receptionist about the patient, If the patient is admitted. <br/>
@@ -32,10 +34,10 @@ The phone number has to be a Registered to Twilio account and obtain SID, token 
 	QR will be sent to visitor’s Mail ID. <br/>
 	In worst case (visitor who doesn’t have a phone), Hard copy of QR code will be provided. <br/>
 
- Improves Quality of business <br/>
- Helps improve Social distancing activity.<br/>  
-	Technology helps reduce Man power. <br/>
-	Reduces cost of maintenance. <br/>
+ Improves Quality of business 
+ Helps improve Social distancing activity.<br>
+	Technology helps reduce Man power. 
+	Reduces cost of maintenance. 
 
 
 ### Instructions to run the program  <br/>
