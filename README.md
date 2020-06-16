@@ -1,5 +1,8 @@
-# Python-rookie-codes
-### Beginner Hobby projects
+## Script minifier 
 
-Please refer to **README** file inside the folder for descriptive information about the program and **Instructions to run the program**. <br>
-**SAMPLE_IO** contains a sample Input and Output example, which will be provided to only applicable programs.  
+A common tool used to compress the html, css and js files to reduce load time of a web site.
+
+### How to run
+- Clone or download this repository.
+- Make sure the file to be minified is in same directory as the `Minify.py` script
+- Run the py script with the filename as argument, `python Minify.py filename` 
