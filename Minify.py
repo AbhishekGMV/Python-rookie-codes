@@ -7,9 +7,9 @@ def removeComments(file):
     """
     with open(file, 'r') as script:
         mess_file = script.read()
-    clean_file = re.sub(re.compile("/\*.*?\*/"),"" ,mess_file)
-    clean_file = re.sub(re.compile("//.*?\n"),"" ,clean_file) 
-    clean_file = re.sub(re.compile("<!--.*?-->"),"", clean_file)
+    clean_file = re.sub(re.compile("/\*.*?\*/"),"" ,mess_file) #removes comment with pattern /*...*/
+    clean_file = re.sub(re.compile("//.*?\n"),"" ,clean_file) #removes comment with pattern //
+    clean_file = re.sub(re.compile("<!--.*?-->"),"", clean_file) ##removes comment with pattern <!-- ... -->
     
     with open(file, 'w') as script:
         script.write(clean_file)
