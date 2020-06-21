@@ -5,29 +5,49 @@ def removeComments(file):
     """
     Removes all the comments in the file 
     """
-    with open(file, 'r') as script:
-        mess_file = script.read()
-    clean_file = re.sub(re.compile("/\*.*?\*/"),"" ,mess_file)
-    clean_file = re.sub(re.compile("//.*?\n"),"" ,clean_file) 
-    clean_file = re.sub(re.compile("<!--.*?-->"),"", clean_file)
-    
-    with open(file, 'w') as script:
-        script.write(clean_file)
+    try:
+        with open(file, 'r') as script:
+            mess_file = script.read()
+
+        clean_file = re.sub(re.compile("/\*.*?\*/"),"" ,mess_file)
+        clean_file = re.sub(re.compile("//.*?\n"),"" ,clean_file) 
+        clean_file = re.sub(re.compile("<!--.*?-->"),"", clean_file)
+        
+        with open(file, 'w') as script:
+            script.write(clean_file)
+
+    except IOError:
+        print("Couldn't open file.")
+
+    except Exception:
+        print("Couldn't remove comments")            
 
 def minifier(file):
     """
     Removes all white spaces in the file 
     """
-    minified =''
-    with open(file,'r') as script_file:
-        for line in script_file.read():
-            for char in line.strip():
-                if not char == ' ':
-                    minified += char    
 
-    with open(file,'w') as script_file:
-        script_file.write(minified)            
+    try:    
+        minified =''
+        with open(file,'r') as script_file:
+            for line in script_file.read():
+                for char in line.strip():
+                    if not char == ' ':
+                        minified += char    
+
+        with open(file,'w') as script_file:
+            script_file.write(minified)
+
+    except IOError:
+        print("Couldn't open file.")  
+
+    except Exception:
+        print("Couldn't minify the file.")                      
         
 if __name__ == '__main__':
-    removeComments(sys.argv[1])
-    minifier(sys.argv[1])
+    try:
+        removeComments(sys.argv[1])
+        minifier(sys.argv[1])
+
+    except Exception:
+        print("I take one filename :)")    
